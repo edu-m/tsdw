@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Fake Bank</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form method="post" action="myServlet">
+            <input type="hidden" name="status" value="statusValue">
+            Richiedi numero di conto: <button type="submit">Submit</button>
+        </form>
+        
+        <form method="post" action="myServlet">
+            <input type="hidden" name="status" value="statusBalance">
+            Richiedi saldo del conto: <button type="submit">Submit</button>
+        </form>
+        
+        <form method="post" action="myServlet">
+            <input type="hidden" name="status" value="statusLogout">
+            Effettua il logout: <button type="submit">Submit</button>
+        </form>
+        <br>
+        <form method="post" action="myServlet">
+            Inserire le operazioni e premere invio:<br>
+            <input type="hidden" name="status" value="statusOperations">
+            <input type="text" name="param1">
+            <input type="text" name="param2">
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

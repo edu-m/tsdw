@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://tsdw.dmi/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://tsdw.dmi/">
+
+<xs:element name="getBalance" type="tns:getBalance"/>
+
+<xs:element name="getBalanceResponse" type="tns:getBalanceResponse"/>
+
+<xs:element name="logout" type="tns:logout"/>
+
+<xs:element name="logoutResponse" type="tns:logoutResponse"/>
+
+<xs:element name="operations" type="tns:operations"/>
+
+<xs:element name="operationsResponse" type="tns:operationsResponse"/>
+
+<xs:element name="statusAccount" type="tns:statusAccount"/>
+
+<xs:element name="statusAccountResponse" type="tns:statusAccountResponse"/>
+
+<xs:complexType name="operations">
+<xs:sequence>
+<xs:element name="param1" type="xs:string" minOccurs="0"/>
+<xs:element name="param2" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="operationsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getBalance">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getBalanceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="logout">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="logoutResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="statusAccount">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="statusAccountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
